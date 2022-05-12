@@ -46,6 +46,7 @@ input {
     height: 100%;
     color: aqua;
     background-color: yellowgreen;
+    border: 1px solid red;
 }
 .point:hover {
     cursor: pointer;
