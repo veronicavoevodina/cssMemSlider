@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input {
+    display: flex;
+    order: 5;
+}
+.slide {
+    width: 100%;
+    height: 70%;
+}
+.text {
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+}
+.text_container {
+    width: 50%;
+}
+.t_c1, .t_c2, .t_c3, .t_c4 {
+    display: none;
+}
+.text_item {
+    width: 200px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background-color: blue;
+}
+.point {
+    width: 25%;
+    height: 100%;
+    color: aqua;
+    background-color: yellowgreen;
+}
+.point:hover {
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+#num1:checked ~ .show {
+    background-image: url(./assets/mem1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ 
+ #num2:checked ~ .show {
+    background-image: url(./assets/mem2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ 
+ #num3:checked ~ .show {
+    background-image: url(./assets/mem4.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ 
+ #num4:checked ~ .show {
+    background-image: url(./assets/mem3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ #num1:checked ~ .t_c1 {
+  display: flex;
+ }
+ #num2:checked ~ .t_c2 {
+    display: flex;
+   }
+#num3:checked ~ .t_c3 {
+    display: flex;
+   }
+#num4:checked ~ .t_c4 {
+    display: flex;
+   }
+   @media (max-width: 400px) {
+       .main {
+           flex-direction: column;
+           justify-content: space-around;
+       }
+       .text_container {
+           align-self: flex-start;
+           order: 3;
+       }
+       .menu {
+           align-self: center;
+           order: 2;
+       }
+       .slide {
+           order: 1;
+           height: 50%;
+       }
+
+   }
