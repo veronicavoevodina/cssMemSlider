@@ -25,7 +25,7 @@ input {
     overflow: hidden;
 }
 .text_container {
-    width: 50%;
+    width: 30%;
 }
 .t_c1, .t_c2, .t_c3, .t_c4 {
     display: none;
@@ -37,19 +37,38 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 180px;
+    width: 250px;
     height: 50px;
-    background-color: blue;
+}
+.point_item {
+    width: 20%;
+    height: 20%;
+    margin-left: 30%;
+    background-image: url(./assets/heart_chosen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    border-radius: 10px;
+    transition: all 0.4s ease;
 }
 .point {
-    width: 25%;
+    width: 21%;
     height: 100%;
     color: aqua;
-    background-color: yellowgreen;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
 }
 .point:hover {
     cursor: pointer;
+}
+.point:hover .point_item{
+    opacity: 1;
+    width: 80%;
+    height: 100%;
+    background-image: url(./assets/chosen.png);
+    margin: 0;
+    transform:scale(1);
+    transition: 0.5s;
 }
 input {
     display: none;
@@ -93,6 +112,26 @@ input {
 #num4:checked ~ .t_c4 {
     display: flex;
    }
+   #num1:checked ~ .menu > .point1 {
+    background-image: url(./assets/chosen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+   #num2:checked ~ .menu > .point2 {
+    background-image: url(./assets/chosen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#num3:checked ~ .menu > .point3 {
+    background-image: url(./assets/chosen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#num4:checked ~ .menu > .point4 {
+    background-image: url(./assets/chosen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
    @media (max-width: 400px) {
        .main {
            flex-direction: column;
