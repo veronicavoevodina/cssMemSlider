@@ -26,14 +26,14 @@ input {
     overflow: hidden;
 }
 .text_container {
-    width: 36%;
+    width: 60%;
     height: 100px;
 }
 .t_c1, .t_c2, .t_c3, .t_c4 {
     display: none;
 }
 .text_item {
-    width: 200px;
+    width: 100%;
     font-family: cursive;
     animation: textTr 1s ease-in-out 1;
 }
@@ -49,7 +49,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 150px;
     height: 50px;
 }
 .point_item {
@@ -64,8 +64,8 @@ input {
     transition: all 0.4s ease;
 }
 .point {
-    width: 21%;
-    height: 100%;
+    width: 96%;
+    height: 70%;
     color: aqua;
     display: flex;
     align-items: center;
